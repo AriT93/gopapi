@@ -1,5 +1,5 @@
 module Gopapi
-
+#simple wrapper around gop api
   require 'net/http'
   require 'uri'
   def self.getProxyInfo
