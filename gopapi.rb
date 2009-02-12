@@ -2,6 +2,7 @@ module Gopapi
 
   require 'net/http'
   require 'uri'
+	#comment for testing
   def self.getGOPXML(method_name,data)
     uri = URI.parse(ENV['http_proxy'])
     @proxy_host = uri.host
