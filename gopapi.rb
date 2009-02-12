@@ -1,8 +1,12 @@
 module Gopapi
-
+#module to wrap the calls to gop api should be a class
+#still reading best way to implement that
   require 'net/http'
   require 'uri'
-	#comment for testing
+  #comment for testing
+  def self.Name
+    puts 'gopapi'
+  end
   def self.getGOPXML(method_name,data)
     uri = URI.parse(ENV['http_proxy'])
     @proxy_host = uri.host
